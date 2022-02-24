@@ -1,0 +1,241 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    width: 100vw;
+}
+::-moz-selection {
+    color: white;
+    background-color: #6C3A5C;
+}
+::selection {
+    color: white;
+    background-color: #6C3A5C;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0vh;
+    z-index: -5;
+    background-image: url(./Assets/bgMountain.jpg);
+    background-size: 125%;
+    background-position: center;
+    filter: opacity(.5) blur(5px);
+    -webkit-filter: opacity(.5) blur(5px);
+    transition: background-position 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.header {
+    margin: 2% 2.5%;
+    height: 10vh;
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.title {
+    margin: 1vh;
+}
+
+.text {
+    margin: 1vh;
+}
+
+.titlecard {
+    max-width: 40vw;
+}
+
+.titlecard .title {
+    font-weight: bold;
+    font-size: 5vh;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 1s;
+}
+
+.titlecard .title:hover {
+    font-size: 5.5vh;
+}
+
+.titlecard .author {
+    margin-left: 2.5vw;
+    font-weight: lighter;
+    font-size: 3vh;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 1s;
+}
+
+.titlecard .author:hover {
+    margin-left: 3vw;
+    font-size: 3.3vh;
+}
+
+.options {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    width: auto;
+    height: 100%;
+}
+
+.options button {
+    height: 8vh;
+    width: 16vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-flow: column nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition-duration: 0.25s;
+}
+
+.options button .buttontext {
+    font-size: 3vh;
+    transition-duration: 0.25s;
+}
+
+.options button .underline {
+    justify-self: flex;
+    padding: 0px;
+    height: 0.25vh;
+    width: 0%;
+    background-color: #2D2D2D;
+    transition-duration: 0.25s;
+}
+
+.options button:hover .buttontext {
+    font-size: 3.3vh;
+}
+
+.options button.active .underline {
+    width: 100%;
+}
+
+/* .options button:hover .underline {
+    width: 100%;
+} */
+
+.main {
+    display: none;
+    flex: 1 1 auto;
+    margin: 2% 2.5%;
+    padding: 2.5%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    transition-duration: 0.25s;
+}
+
+.main .underline {
+    height: 4px;
+    width: 32vw;
+    background-color: #000000;
+}
+
+.main .title {
+    font-size: 4vh;
+    font-weight: bold;
+    color: #000000;
+    transition-duration: 1s;
+}
+
+.main .title:hover {
+    font-size: 5vh;
+}
+
+.main .text {
+    font-size: 3vh;
+    font-weight: normal;
+    color: #000000;
+    transition-duration: 0.25s;
+}
+
+#symbol {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    
+}
+
+.subselection {
+    flex: 0 1 auto;
+    display: flex;
+    flex-flow: column;
+}
+
+.subselection button {
+    flex: 1 1 auto;
+    width: 16vh;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-position: center;
+    background-size: 9vh 9vh;
+    background-repeat: no-repeat;
+    transition-duration: 0.25s;
+}
+
+.subselection button:hover {
+    background-size: 10vh 10vh;
+}
+
+.subselection button .underline {
+    height: 0px;
+    width: 0.5vh;
+    background-color: #000000;
+    transition-duration: 0.25s;
+}
+
+.subselection button.active .underline {
+    height: 100%;
+}
+
+.symboldescription {
+    flex: 1 1 auto;
+    display: none;
+    flex-direction:column;
+}
+
+.symboldescription .underline {
+    height: 0.5vh;
+    width: 32vw;
+    background-color: #000000;
+}
+
+.symboldescription .title {
+    font-size: 4vh;
+    font-weight: bold;
+    color: #000000;
+    transition-duration: 1s;
+}
+
+.symboldescription .title:hover {
+    font-size: 5vh;
+}
+
+.symboldescription .text {
+    font-size: 3vh;
+    font-weight: normal;
+    color: #000000;
+    transition-duration: 0.25s;
+}
+
+.main#sources a {
+    margin: 1vh;
+    font-size: 4vh;
+}
