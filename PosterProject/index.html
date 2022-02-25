@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Project by David Jiang</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div class="box">
+            <div class="header">
+                <div class="titlecard">
+                    <div class="title">Saturday Climbing</div>
+                    <div class="author">by W.D. Valgardson</div>
+                    
+                </div>
+                <div class="options">
+                    <button class="tabselectmain" onclick="openTab(this, 'theme', 'tabselectmain', 'main')">
+                        <div class="buttontext">Theme</div>
+                        <div class="underline"></div>
+                    </button>
+                    <button class="tabselectmain" onclick="openTab(this, 'symbol', 'tabselectmain', 'main')">
+                        <div class="buttontext">Symbols</div>
+                        <div class="underline"></div>
+                    </button>
+                    <button class="tabselectmain" onclick="openTab(this, 'sources', 'tabselectmain', 'main')">
+                        <div class="buttontext">Sources</div>
+                        <div class="underline"></div>
+                    </button>
+                </div>
+            </div>
+            <div class="main" id="theme">
+                <div class="title">Thematic Statement</div>
+                <div class="underline"></div>
+                <div class="text">The primary theme of "Saturday Climbing" by W.D. Valgardson is about the importance of trust in maintaining a healthy relationship. It is that, while we should be ready and willing to help the people we care about, one ought not to be overbearing over another and agency should be afforded to all parties involved with the understanding that one cannot forever lord over the other and the faith that others are capable of doing the right thing independent of oneself.</div>
+            </div>
+            <div class="main" id="symbol">
+                <div class="subselection">
+                    <button class="tabselectsub" style="background-image: url(./Assets/mountains.png);" onclick="openTab(this, 'cliff', 'tabselectsub' ,'symboldescription')">
+                        <div class="underline"></div>
+                    </button>
+                    <button class="tabselectsub" style="background-image: url(./Assets/rope.png);" onclick="openTab(this, 'rope', 'tabselectsub', 'symboldescription')">
+                        <div class="underline"></div>
+                    </button>
+                    <button class="tabselectsub" style="background-image: url(./Assets/graduation-hat.png);" onclick="openTab(this, 'college', 'tabselectsub', 'symboldescription')">
+                        <div class="underline"></div>
+                    </button>
+                    <button class="tabselectsub" style="background-image: url(./Assets/meds.png);" onclick="openTab(this, 'dope', 'tabselectsub', 'symboldescription')">
+                        <div class="underline"></div>
+                    </button>
+                </div>
+                <div class="symboldescription" id='cliff'>
+                    <div class="title">Symbol 1, The Cliff</div>
+                    <div class="underline"></div>
+                    <div class="text">The cliff that Barry and Moira climb together is a symbol of the reality of life.  When climbing, Barry is sometimes able to support Moira by securing the rope as she climbs.  However, the cliff also presents many obstacles wherein Barry must “leave [Moira] to find her own solution” due to him "not having dealt with the obstacle himself" (Valgardson, 57) just like how, in life, parents may not always be capable of or know how to help their children through every situation.  In this way, Barry learns through climbing the cliff with Moira that it is not possible for him to protect his daughter indefinitely, and that the best way to support her is to give her space to exercise responsibility and agency, a sentiment that applies to all facets of life in parenthood.</div>
+                </div>
+                <div class="symboldescription" id='rope'>
+                    <div class="title">Symbol 2, Climbing Rope</div>
+                    <div class="underline"></div>
+                    <div class="text">The climbing rope used to tether climbers to the cliffside is a symbol of the trust and support that Barry provides to Moira.  When there is too much slack and the rope is not properly held in place, it can lead to incidents like when a boy had fell from the cliff and nearly died, “[slipping] in and out of consciousness” (Valgardson, 59).  However, when there is too little slack, it can be very difficult to ascend.  This dichotomy reflects the mechanism of Barry putting trust in his daughter, wherein giving Moira too much agency can cause her to get hurt, but giving her too little can may stifle both her potential and their relationship.  Rope as a symbol for famillial trust becomes fully realized at the end of the story where Barry learns to “give her all the slack she needed while, at the same time, keeping his hands tensed” (Valgardson, 59), symbolically giving her the freedom she needs to improve while being “ready to absorb the shock of any fall” (Valgardson, 59).                    </div>
+                </div>
+                <div class="symboldescription" id='college'>
+                    <div class="title">Symbol 3, College Prospects</div>
+                    <div class="underline"></div>
+                    <div class="text">The prospect of Moira going to college in a distant region is symbolic for Barry’s mistrust for his daughter.  Despite having the money to afford going to this college and Moira’s academic ability being evident in her being “two years ahead of herself in school” (Valgardson, 55), Barry remains skeptical of her motives, suspecting that “the choice had more to do with her all-night-party boy than with academic excellence” (Valgardson, 56).  In being unwilling to let Moira attend the distant college despite her apparent academic ability, college brings out the crux of Barry’s unwillingness in giving Moira agency in her own life and thus is the primary symbol of Barry’s lack of trust of Moira throughout the story.  </div>
+                </div>
+                <div class="symboldescription" id='dope'>
+                    <div class="title">Symbol 4, Recreational Drugs</div>
+                    <div class="underline"></div>
+                    <div class="text">The drugs that Moira mentions throughout the story, primarily being “the Pill” and the dope which Barry suspects her of taking, represent Moira’s rebellion towards her father as well as her loss of innocence, both prospects which Barry often refuses to or is afraid of addressing.  When Moira mentions that “everybody’s on the Pill” (Valgardson, 57) and that “the dope’s there if you want it” (Valgardson, 57),  she demonstrates an awareness of the less savoury facets of her surroundings that Barry is “afraid to ask” (Valgardson, 57) about, thus being the cornerstone of discussion around Moira’s childhood innocence or lackthereof in the story.</div>
+                </div>
+            </div>
+            <div class="main" id="sources">
+                <a href="https://www.flaticon.com/free-icons/height" title="height icons">Height icons created by Freepik - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/rope" title="rope icons">Rope icons created by Freepik - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/school" title="school icons">School icons created by bqlqn - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/pill" title="pill icons">Pill icons created by Darius Dan - Flaticon</a>
+            </div>
+        </div>
+        <div class="background"></div>
+    </body>
+</html>
